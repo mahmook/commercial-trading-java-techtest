@@ -1,0 +1,19 @@
+### IDEs ###
+.classpath
+.project
+.settings
+.idea
+.DS_Store
+*.iws
+*.iml
+*.ipr
+
+### Compiled ###
+build/
+target/
+out/
+.gradle
+
+### STS ###
+!**/src/main/**/bin/
+!**/src/test/**/bin/
