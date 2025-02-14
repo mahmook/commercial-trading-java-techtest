@@ -25,7 +25,7 @@ class AnagramServiceSpec extends Specification {
                 ])
             }
 
-        output.toString() == "eat,tea\nsop,pos\n\n"
+            output.toString() == "eat,tea\nsop,pos\n\n"
     }
 
     def "should print a single anagram group correctly"() {
@@ -42,7 +42,7 @@ class AnagramServiceSpec extends Specification {
                 ])
             }
 
-        output.toString() == "eat,tea,ate\n\n"
+            output.toString() == "eat,tea,ate\n\n"
     }
 
     def "should print each unique word on separate line when no anagrams exist"() {
@@ -60,7 +60,7 @@ class AnagramServiceSpec extends Specification {
                 ])
             }
 
-        output.toString() == "cat\ndog\n\n"
+            output.toString() == "cat\ndog\n\n"
     }
 
     def "should handle large number of anagram groups by processing in batches"() {
@@ -77,7 +77,7 @@ class AnagramServiceSpec extends Specification {
                 consumer.consume(["rst": ["str", "trs"]])
             }
 
-        output.toString() == "eat,tea\n\nsop,pos\n\nstr,trs\n\n"
+            output.toString() == "eat,tea\n\nsop,pos\n\nstr,trs\n\n"
     }
 
     def "should process single letter words correctly"() {
@@ -95,6 +95,6 @@ class AnagramServiceSpec extends Specification {
                 ])
             }
 
-        output.toString() == "a\nb\n\n"
+            output.toString() == "a\nb\n\n"
     }
 }
